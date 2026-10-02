@@ -1,0 +1,19 @@
+[project]
+name = "weather-data-pipeline-alert-system"
+version = "0.1.0"
+description = "Streaming weather anomaly detection pipeline"
+requires-python = ">=3.11"
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+asyncio_mode = "auto"
+
+[tool.ruff]
+line-length = 88
+
+
+[tool.ruff.lint]
+ignore = ["C417"]
+
+[tool.mypy]
+strict = true
